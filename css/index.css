@@ -1,3 +1,534 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    max-width: 100%;
+  /*  border: 1px solid grey; */
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p,
+address {
+    font-size: 18px;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* code starts here */
+
+
+/* menu section */
+#menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    justify-content: space-between;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4% auto;
+    margin-right: 5%;
+    padding: 1%;
+} 
+
+nav div {
+    margin-top: .4%;
+    width: 10%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 10%;
+    width: 30%;
+    margin-top: 6%;
+}
+
+nav div a {
+    font-size: 18px;
+    color: grey;
+}
+
+nav div a:hover {
+    color: black;
+}
+
+/* top section */
+
+.top {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 5%;
+}
+
+.topdiv {
+    margin: 0 auto;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top img {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    width: 40vh;
+    height: 40vh;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.topdiv2 {
+    display: flex;
+    border: 1px solid black;
+    padding: 2% 11%;
+    margin-top: 2%;
+}
+
+.topdiv2 p a {
+    font-size: 25px;
+    color: black;
+}
+
+.topdiv2 p a:hover {
+    color: grey;
+}
+
+/* info 1 */
+
+.info {
+    margin: 2% auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.features,
+.about {
+    width: 150%;
+}
+.features {
+    margin-right: 2%;
+}
+
+
+/* middle img */
+
+.middle-img {
+    width: 100%;
+    margin: 2% auto;
+}
+
+/* info2 */
+
+.info2 {
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 4%;
+}
+
+.services,
+.product {
+    margin-right: 1%;
+}
+
+/* contact */
+
+.contact {
+    margin-left: auto;
+}
+
+.contact p,
+address {
+    font-size: 20px;
+    width: 20%;
+}
+
+
+
+footer p {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+/* END PAGE 1 */
+
+/* Services Page Start */
+
+/* section 1 */
+
+.services-header-img {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.section1 div {
+    width: 90%;
+    margin: 4%;
+    margin-left: 5%;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 4%;
+
+}
+
+.service {
+    font-size: 40px;
+}
+
+/* section 2 */
+
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pdiv {
+    padding: 2% 5% 2% 2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    width: 42.5%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #f3f3f3;
+}
+
+.pdiv p {
+    margin-bottom: 5%;
+}
+
+.adiv {
+    text-align: center;
+    width: 27%;
+    padding: 2% 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.adiv a {
+    color: black;
+}
+
+.borderdiv {
+    border-bottom: 2px solid black;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 4%;
+}
+
+
+/* Section 3 */
+
+.section3 {
+    display: flex;
+
+}
+
+.services-info-img {
+    margin-bottom: 5%;
+    width: 40%;
+
+}
+
+.section3 div {
+    margin-left: 5%;
+    margin-right: 10%;
+    width: 40%;
+}
+
+.section3 div ul {
+    margin-top: 5%;
+    margin-left: 3%;
+    list-style-type: square;
+}
+
+.section3 div ul li {
+    margin: 2% 2% 0 2%;
+    font-size: 20px;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+    }
+    nav {
+        width: 90%;
+        margin: 2% auto;
+    }
+    #menu {
+        flex-direction: column;
+    }
+
+    .top img {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media (max-width: 500px) {
+   /* .features, .about, .services, .product, .vision {
+        width: 100%;
+    } */
+    .container {
+
+        margin: none;
+        border-color: red;
+        padding: 0%;
+    }
+
+    .container2 {
+        width: 100%;
+        padding: 0 2%;
+        margin: 0 auto;
+        border-color: aqua;
+
+    }
+
+    #menu {
+        width: 100%;
+        border-color: green;
+    }
+    .logo {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+
+    nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav div {
+        width: 100%;
+        border-bottom: 1px solid grey;
+    }
+    .serva {
+        border-top: 1px solid grey;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .topdiv {
+        margin: 15% auto;
+    }
+
+    .info, .info2 {
+        flex-wrap: wrap;
+    }
+
+    .features, .about, .services, .product, .vision {
+        margin: 3% auto;
+        width: 100%;
+    } 
+
+    .contact {
+        text-align: left;
+        width: 100%;
+        margin-top: 5%;
+    }
+    .contact p, address {
+        font-size: 15px;
+        width: 30%;
+    }
+
+}
